@@ -25,4 +25,8 @@ class Task extends Model
             $builder->where('creator_id', Auth::id());
         });
     }
+
+    public function project(){
+        return $this->belongsTo(Project::class);
+    }
 }

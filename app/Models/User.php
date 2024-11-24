@@ -52,4 +52,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Task::class, 'creator_id');
     }
+
+    public function projects(){
+        return $this->hasMany(Project::class,'creator_id');
+    }
 }
