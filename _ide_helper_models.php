@@ -68,6 +68,17 @@ namespace App\Models{
 /**
  * 
  *
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel query()
+ */
+	class TestModel extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * 
+ *
  * @property int $id
  * @property string $name
  * @property string $email
